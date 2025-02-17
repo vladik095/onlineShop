@@ -7,6 +7,9 @@ authors = ["Vladislav <ilusevicv@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 fastapi = {extras = ["all"], version = "^0.115.8"}
+SQLAlchemy = "^2.0.38"
+alembic = "^1.14.1"
+asyncpg = "^0.30.0"
 
 [tool.poetry.dev-dependencies]
 
