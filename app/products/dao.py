@@ -1,6 +1,6 @@
 from app.dao.base import BaseDAO
-from app.products.models import Bookings
+from app.products.models import Products
 
 
 class ProductsDAO(BaseDAO):
-    model = Bookings
+    model = Products
