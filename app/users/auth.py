@@ -8,10 +8,9 @@ from pydantic import EmailStr
 from app.config import settings
 from app.users.dao import UsersDAO
 from app.users.schemas import (
-    SUserAuth,  # Предполагается, что у вас есть схема пользователя
+    SUserAuth,
 )
 
-# Инициализация контекста для хеширования паролей
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def get_password_hash(password: str) -> str:
@@ -47,11 +46,9 @@ async def authenticate_user(email: EmailStr, password: str) -> SUserAuth | None:
     user = await UsersDAO.find_one_or_none(email=email)
     
     if not user:
-        # Пользователь не найден
         return None
     
     if not verify_password(password, user.hashed_password):
-        # Неверный пароль
         return None
     
     return user

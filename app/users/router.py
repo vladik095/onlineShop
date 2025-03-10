@@ -20,12 +20,12 @@ async def register_user(user_data: SUserAuth):
 
 @router.post("/login")
 async def login_user(response: Response, user_data: SUserAuth):
-    user = await authenticate_user(user_data.email, user_data.password)  # Объединяем проверки
+    user = await authenticate_user(user_data.email, user_data.password) 
     
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Неверная почта или пароль"  # Не раскрываем детали
+            detail="Неверная почта или пароль"  
         )
     
     access_token = create_access_token({"sub": str(user.id)})
