@@ -1,4 +1,4 @@
-from sqlalchemy import JSON, Column, Integer, String
+from sqlalchemy import Column, Integer, String
 
 from app.database import Base
 
@@ -8,6 +8,6 @@ class Products(Base):
 
     id = Column(Integer, primary_key=True)
     price = Column(Integer)
-    descriptions = Column(String, nullable=False)  # Исправлено
+    descriptions = Column(String, nullable=False) 
     specifications = Column(String, nullable=False)
     quantity = Column(Integer)
