@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "email": "user1@example.com",
+      "hashed_password": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW"
+    },
+    {
+      "id": 2,
+      "email": "user2@example.com",
+      "hashed_password": "$2b$12$TrN0K5yXo5Rj.l/.lX1wPu.iJZ5QlK7z3WYk3JZ9VYbJ1cZQ1Qd2O"
+    },
+    {
+      "id": 3,
+      "email": "user3@example.com",
+      "hashed_password": "$2b$12$4jUkV2JQYl5yQ1Z3XpXZ0Oe5rZ9VY1Z3XpXZ0Oe5rZ9VY1Z3XpXZ0"
+    }
+  ]

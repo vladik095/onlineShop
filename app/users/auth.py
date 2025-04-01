@@ -14,15 +14,15 @@ from app.users.schemas import (
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def get_password_hash(password: str) -> str:
-    """Хеширование пароля"""
+    
     return pwd_context.hash(password)
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    """Проверка пароля против хеша"""
+    
     return pwd_context.verify(plain_password, hashed_password)
 
 def create_access_token(data: dict) -> str:
-    """Создание JWT токена"""
+   
     to_encode = data.copy()
     expire = datetime.now(timezone.utc) + timedelta(
         minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES
@@ -42,7 +42,7 @@ def create_access_token(data: dict) -> str:
     return encoded_jwt
 
 async def authenticate_user(email: EmailStr, password: str) -> SUserAuth | None:
-    """Аутентификация пользователя"""
+  
     user = await UsersDAO.find_one_or_none(email=email)
     
     if not user:

@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "price": 999,
+      "descriptions": "Смартфон с отличной камерой",
+      "specifications": "Экран 6.1\", процессор A15 Bionic, 128GB",
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "price": 799,
+      "descriptions": "Мощный ноутбук для работы",
+      "specifications": "Экран 15.6\", Intel Core i7, 16GB RAM, 512GB SSD",
+      "quantity": 5
+    },
+    {
+      "id": 3,
+      "price": 299,
+      "descriptions": "Беспроводные наушники",
+      "specifications": "Bluetooth 5.0, время работы до 20 часов",
+      "quantity": 20
+    },
+    {
+      "id": 4,
+      "price": 499,
+      "descriptions": "Умные часы с мониторингом здоровья",
+      "specifications": "Экран AMOLED, GPS, мониторинг пульса и сна",
+      "quantity": 8
+    }
+  ]
